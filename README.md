@@ -11,8 +11,8 @@ Granitedb is designed in the following principles:
 
 * Read fast
 * Optimize write throughput
-* Write acknowledgement is important
-* Support the scale of petabyte dataset
 * Column based data storage
+* Support write acknowledgement
+* Support the scale of petabyte dataset
+* Support data sharding
 * Support commonly used data structure and atomic operations
-* Support in-process multi-disk / memory / different storage medium parallel

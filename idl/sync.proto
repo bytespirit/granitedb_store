@@ -1,0 +1,31 @@
+/*
+ * @Author: lipixun
+ * @Date: 2019-11-30 19:12:18
+ * @Last Modified by: lipixun
+ * @Last Modified time: 2019-11-30 19:30:13
+ */
+
+syntax = "proto3";
+
+package bytespirit.granitedb.storage;
+
+// Optimize for code siize
+option optimize_for = CODE_SIZE;
+
+//
+// The syncing data
+//
+message SyncData {
+  // The sequence number of the latest data
+  uint64 seq_no = 1;
+  // The binary data
+  bytes binary_data = 2;
+}
+
+//
+// The sync acknowledgement
+//
+message SyncAck {
+  // The sequence number of the latest data
+  uint64 seq_no = 1;
+}
